@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Diego Barrios</title>
+
+    <link rel="stylesheet" type="text/css" href="./fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./examples.css" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+    <style>
+
+        #section4 .intro1, #section3 .intro1{
+			left: -130%;
+			position:relative;
+            transition: all 600ms ease;
+		}
+
+    /**
+    * Here we fire the animation for section 3.
+    * As the fp-viewing class in the body changes on each section and slide.
+    */
+    body.fp-viewing-4thpage #section4 .intro1, body.fp-viewing-3rdPage #section3 .intro1{
+       left: 0%;
+    }
+	</style>
+</head>
+
+<body>
+
+    <ul id="menu">
+        <li data-menuanchor="firstPage"><a href="#firstPage">1</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">2</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">3</a></li>
+        <li data-menuanchor="4thPage"><a href="#4thPage">4</a></li>
+        <li data-menuanchor="5thPage"><a href="#5thPage">5</a></li>
+        <li data-menuanchor="6thPage"><a href="#6thPage">6</a></li>
+        <li data-menuanchor="7thPage"><a href="#7thPage">7</a></li>
+
+    </ul>
+
+    <div id="fullpage">
+
+        <div class="section" id="section1">
+            <div>
+                <br>
+                <br>
+                <br>
+                <h1>De: Quien te ama demasiado</h1>
+                <p>Diego...</p>
+                <img width="15%" height="15%" src="imgs/valentines-day-1986205_960_720.png" alt="">
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+
+            <div class="container">
+                    <div class="intro">  
+                            <img width="50%" src="imgs/paper-heart-3123659_640.png" alt="">          
+                             <p>Gracias por tanto y todo. Has sanado tanto de mí como me
+                            he podido enamorar a diario de ti. Has sido lo mejor de mi año... y espero me hagas el
+                            resto de la vida. ¡Te amo! <3</p>
+                                
+                    </div>
+
+                    <div class="intro"><img width="80%" src="imgs/maria.jpg" alt=""></div>
+            </div>
+        </div>
+            
+
+            <div class="section " id="section3">
+                <div class="intro1">
+                    <h1>Cada 20 será nuestro</h1>
+                    <br>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rzzxrA9rOEI" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+            <div class="section " id="section4">
+                <div class="intro1">
+                    <h1>Ella...</h1>
+                    <br>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cgm_nHa_O1g" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="section" id="section5">
+                    <div class="container">
+  
+        
+                            <div class="intro"><img width="50%" src="imgs/diegoymaria.jpg" alt=""></div>
+
+                            <div class="intro">
+                                    <p>Ella es 
+                                            Tiempo prometido<br>
+                                            Besos imaginados<br>
+                                            Sueños de un viejo cansado<br>
+                                            De un niño dormido<br>
+                                            Preciosa luna misteriosa<br>
+                                            Mi hermosa rosa roja
+                                        </p>
+
+                                        <img width="30%" src="imgs/flowers-3556344_640.png" alt="">  
+                                            
+                                </div>
+                    </div>
+            </div>
+
+
+            <div class="section" id="section6">
+                    <div class="container">
+
+                            <div class="intro"><img width="50%" src="imgs/image1.png" alt=""></div>
+                            <div class="intro"><img width="50%" src="imgs/image2.png" alt=""></div>
+
+                    </div>
+            </div>
+
+            <div class="section" id="section7">
+                    <img width="60%" src="imgs/250.jpg" alt="">
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./fullpage.js"></script>
+        <script type="text/javascript" src="./examples.js"></script>
+        <script type="text/javascript">
+            var myFullpage = new fullpage('#fullpage', {
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#ccddff', '#9f8aa5', '#4BBFC3', '#f6e4e4'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage'],
+                menu: '#menu'
+            });
+        </script>
+
+</body>
+
+</html>
